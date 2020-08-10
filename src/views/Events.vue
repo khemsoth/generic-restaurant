@@ -1,6 +1,6 @@
 <template>
   <div>
-    
+    This will be the events page
   </div>
 </template>
 

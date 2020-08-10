@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import About from '../views/About.vue'
+import Catering from '../views/Catering.vue'
+import Contact from '../views/Contact.vue'
+import Events from '../views/Events.vue'
 
 Vue.use(VueRouter)
 
@@ -19,7 +23,27 @@ Vue.use(VueRouter)
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/Menu.vue')
     }
-  }
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: About
+  },
+  {
+    path: '/catering',
+    name: 'Catering',
+    component: Catering
+  },
+  {
+    path: '/events',
+    name: 'Events',
+    component: Events
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
+  },
 ]
 
 const router = new VueRouter({

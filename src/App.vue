@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <div class="nav-bar" id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/menu">Menu</router-link> |
-      <router-link to="/events">Events</router-link> |
-      <router-link to="/catering">Catering</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/contact">Contact</router-link> |
-
+    <div class="nav-bar flex flex-row justify-between" id="nav">
+      <div class="logo flex items-center">
+      <h2 class="text-4xl ml-6 font-semibold">
+        Generic Brewhouse
+      </h2>
+      </div>
+      <div class="mr-6 flex items-end">
+        <router-link to="/" class="mr-6 p-2 text-xl">Home</router-link>
+        <router-link to="/menu" class="mr-6 p-2 text-xl">Menu</router-link>
+        <router-link to="/events" class="mr-6 p-2 text-xl">Events</router-link>
+        <router-link to="/catering" class="mr-6 p-2 text-xl">Catering</router-link>
+        <router-link to="/about" class="mr-6 p-2 text-xl">About</router-link>
+        <router-link to="/contact" class="mr-6 p-2 text-xl">Contact</router-link>
+      </div>
     </div>
     <router-view/>
   </div>
@@ -22,24 +28,29 @@ export default {
 
 <style>
 
+.logo {
+  color: #bdc3c7;
+}
+
+.nav-bar {
+  height: 15vh;
+  background-color: #2c3e50;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
 }
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #ecf0f1;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  font-style: italic;
+  color: #ecf0f1;
 }
 </style>
