@@ -1,17 +1,19 @@
 <template>
   <div class="menu flex flex-col items-center">
-    <h1>This is an menu page</h1>
+    <MenuOption />
     <MenuItem />
   </div>
 </template>
 
 <script>
 import MenuItem from '../components/MenuItem'
+import MenuOption from '../components/MenuOption'
 
 export default {
   name: 'Menu', 
   components: {
-    MenuItem
+    MenuItem,
+    MenuOption
   },
   data() {
     return {
