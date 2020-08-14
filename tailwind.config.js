@@ -150,7 +150,13 @@ module.exports = {
       '56': '14rem',
       '64': '16rem',
     },
-    backgroundColor: theme => theme('colors'),
+    backgroundColor: theme =>({ 
+      ...theme('colors'),
+        'primary': '#2c3e50',
+        'secondary': '#34495e',
+        'tertiary': '#ecf0f1',
+        'accent': '#bdc3c7'
+    }),
     backgroundOpacity: theme => theme('opacity'),
     backgroundPosition: {
       bottom: 'bottom',
@@ -342,6 +348,9 @@ module.exports = {
     },
     minWidth: {
       '0': '0',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
       full: '100%',
     },
     objectPosition: {
