@@ -15,6 +15,9 @@ export default {
     MenuItem,
     MenuOption
   },
+  props: {
+    course: String
+  },
   data() {
     return {
 

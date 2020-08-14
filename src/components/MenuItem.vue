@@ -12,7 +12,7 @@
             {{ item.price }}
           </div>
         </div>
-        <div class="m-3">
+        <div class="pl-16 m-3 text-left">
           {{ item.desc }}
         </div>
       </li>

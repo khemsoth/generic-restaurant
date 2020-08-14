@@ -2,12 +2,12 @@
   <div>
     <ul class="flex flex-row">
       <li 
-      v-for="option in options" 
-      v-bind:key="option.id"
+      v-for="course in courses" 
+      v-bind:key="course.id"
       class="m-4"
       >
         <input type="button" 
-        v-bind:value="option.name"
+        v-bind:value="course.name"
         class="p-3"
         >
       </li>
@@ -17,10 +17,13 @@
 
 <script>
 export default {
-  name: 'Menu Option',
+  name: 'Courses',
+  props: {
+    course: String
+  },
   data() {
     return {
-      options: [
+      courses: [
         {
           name: 'Lunch'
         },
@@ -40,5 +43,9 @@ export default {
 </script>
 
 <style scoped>
+
+  input:hover {
+    cursor: pointer;
+  }
 
 </style>
