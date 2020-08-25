@@ -3,7 +3,7 @@
     <h2
     class="text-3xl m-5 text-left font-bold"
     >
-    Come join us for the special events listed below!
+    Join us for the special events listed below!
     </h2>
     <ul class="grid grid-cols-2 gap-1">
       <li 
