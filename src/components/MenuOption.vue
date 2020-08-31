@@ -3,6 +3,7 @@
     <ul class="flex flex-row">
       <li 
       v-for="course in courses" 
+      @click="$emit('toggle-menu', )"
       v-bind:key="course.id"
       class="m-4"
       >
@@ -37,6 +38,10 @@ export default {
           name: 'Drinks'
         },
       ]
+    }
+  },
+  methods: {
+    toggleMenu(course) {
     }
   }
 }

@@ -40,7 +40,7 @@
         </div>
         <input type="button" 
           value="Send Message" 
-          class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow w-1/5 mx-10 self-end"
+          class="cursor-pointer bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow w-1/5 mx-10 self-end"
           v-on:click="submitContactForm"
         >
       </form>
