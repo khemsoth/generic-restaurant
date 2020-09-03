@@ -5,6 +5,7 @@ import About from '../views/About.vue'
 import Catering from '../views/Catering.vue'
 import Contact from '../views/Contact.vue'
 import Events from '../views/Events.vue'
+import RedirectButton from '../components/RedirectButton'
 
 Vue.use(VueRouter)
 
@@ -42,8 +43,16 @@ Vue.use(VueRouter)
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
+    components: {
+      default: Contact,
+      sidebar: RedirectButton
+    },
+    props: {
+      default: true,
+      sidebar: 'contact'
+    }
   },
+
 ]
 
 const router = new VueRouter({

@@ -1,16 +1,16 @@
 <template>
-  <div>
-    <input
-      class="cursor-pointer hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
-      type="button"
-      value="test button"
-    />
-  </div>
+<div class="w-full flex flex-row justify-evenly w-full">
+  <router-link to="/menu" tag="button"
+    class="cursor-pointer hover:bg-tertiary text-primary font-semibold py-2 px-4 border border-primary hover:border-transparent rounded w-1/4">Menu</router-link>
+  <router-link to="/contact" tag="button"
+    class="cursor-pointer hover:bg-tertiary text-primary font-semibold py-2 px-4 border border-primary hover:border-transparent rounded w-1/4">Contact</router-link>
+</div>
 </template>
 
 <script>
 export default {
   name: "RedirectButton",
+  props: ['path'],
 };
 </script>
 

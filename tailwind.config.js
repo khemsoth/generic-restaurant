@@ -150,7 +150,7 @@ module.exports = {
       '56': '14rem',
       '64': '16rem',
     },
-    backgroundColor: theme =>({ 
+    backgroundColor: theme =>({
       ...theme('colors'),
         'primary': '#2c3e50',
         'secondary': '#34495e',
@@ -176,6 +176,7 @@ module.exports = {
     },
     borderColor: theme => ({
       ...theme('colors'),
+      'primary': '#2c3e50',
       default: theme('colors.gray.300', 'currentColor'),
     }),
     borderOpacity: theme => theme('opacity'),
@@ -286,7 +287,7 @@ module.exports = {
     }),
     inset: {
       '0': '0',
-      
+
       '1/2': '50%',
       auto: 'auto',
     },
@@ -405,7 +406,13 @@ module.exports = {
       '1': '1',
       '2': '2',
     },
-    textColor: theme => theme('colors'),
+    textColor: theme => ({
+      ...theme('colors'),
+        'primary': '#2c3e50',
+        'secondary': '#34495e',
+        'tertiary': '#ecf0f1',
+        'accent': '#bdc3c7'
+    }),
     textOpacity: theme => theme('opacity'),
     width: theme => ({
       auto: 'auto',
