@@ -1,5 +1,5 @@
 <template>
-<div class="home">
+<div class="home bg-tertiary">
   <div class="banner bg-cover h-screen flex flex-col justify-center">
     <!--<img class="h-screen w-screen opacity-75 relative" src="../assets/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg" alt="" srcset="">-->
     <div class="flex justify-center">
@@ -14,16 +14,20 @@
       </div>
     </div>
   </div>
+  <Specials />
+
 </div>
 </template>
 
 <script>
 import RedirectButton from '../components/RedirectButton'
+import Specials from '../components/Specials'
 
 export default {
   name: 'Home',
   components: {
-    RedirectButton
+    RedirectButton,
+    Specials
   }
 }
 </script>
