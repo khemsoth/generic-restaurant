@@ -1,7 +1,6 @@
 <template>
 <div class="home bg-tertiary">
   <div class="banner bg-cover h-screen flex flex-col justify-center">
-    <!--<img class="h-screen w-screen opacity-75 relative" src="../assets/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg" alt="" srcset="">-->
     <div class="flex justify-center">
       <div class='flex flex-col items-center bg-white bg-opacity-75 w-1/2 p-48'>
         <h2 class="text-3xl text-bold text-primary">Lorem ipsum dolor sit amet.</h2>
@@ -15,6 +14,7 @@
     </div>
   </div>
   <Specials />
+  <Reviews />
 
 </div>
 </template>
@@ -22,12 +22,14 @@
 <script>
 import RedirectButton from '../components/RedirectButton'
 import Specials from '../components/Specials'
+import Reviews from '../components/Reviews'
 
 export default {
   name: 'Home',
   components: {
     RedirectButton,
-    Specials
+    Specials,
+    Reviews
   }
 }
 </script>
