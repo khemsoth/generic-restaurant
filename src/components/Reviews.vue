@@ -1,15 +1,17 @@
 <template>
-  <div class="grid grid-cols-2 grid-rows-2 m-16 h-auto pb-20">
-    <div class="w-4/5 mb-20 p-16 bg-white shadow-xl"
-      v-for="review in reviews" :key="review.id"
-      >
-      <div class="flex flex-col justify-center">
-        <h3 class="text-3xl text-semi mb-12">
-          {{ review.name }}
-        </h3>
-        <p class="text-xl text-justify">
-          {{ review.desc }}
-        </p>
+  <div class="pb-20 bg-white">
+    <div class="grid grid-cols-2 grid-rows-2 mx-auto">
+      <div class="w-4/5 mt-20 mb-20 p-16 bg-tertiary shadow-inner"
+        v-for="review in reviews" :key="review.id"
+        >
+        <div class="flex flex-col justify-center">
+          <h3 class="text-3xl text-semi mb-12">
+            {{ review.name }}
+          </h3>
+          <p class="text-xl text-justify">
+            {{ review.desc }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
