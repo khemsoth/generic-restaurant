@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="menu flex flex-col items-center">
     <ul class="flex flex-row">
       <li 
@@ -18,6 +19,8 @@
       <component :is='currentMenuComponent' />
     </keep-alive>
   </div>
+      <Footer />
+  </div>
 </template>
 
 <script>
@@ -26,6 +29,7 @@ import MenuOption from '../components/MenuOption'
 import DrinksMenu from '../components/DrinksMenu'
 import DinnerMenu from '../components/DinnerMenu'
 import DessertMenu from '../components/DessertMenu'
+import Footer from '../components/Footer'
 
 export default {
   name: 'Menu', 
@@ -34,7 +38,8 @@ export default {
     MenuOption,
     DrinksMenu,
     DinnerMenu,
-    DessertMenu
+    DessertMenu,
+    Footer
   },
   data() {
     return {

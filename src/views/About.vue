@@ -15,12 +15,19 @@
     <div>
       <img class="w-3/5 mx-auto my-10" src="../assets/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg" alt="">
     </div>
+    <Footer />
+
   </div>
 </template>
 
 <script>
-export default {
+import Footer from '../components/Footer'
 
+export default {
+  name: 'About',
+  components: {
+    Footer
+  }
 }
 </script>
 

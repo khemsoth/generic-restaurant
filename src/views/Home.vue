@@ -1,4 +1,5 @@
 <template>
+<div>
 <div class="home bg-tertiary">
   <div class="banner bg-cover h-screen flex flex-col justify-center">
     <div class="flex justify-center">
@@ -15,7 +16,8 @@
   </div>
   <Specials />
   <Reviews />
-
+</div>
+  <Footer />
 </div>
 </template>
 
@@ -23,13 +25,15 @@
 import RedirectButton from '../components/RedirectButton'
 import Specials from '../components/Specials'
 import Reviews from '../components/Reviews'
+import Footer from '../components/Footer'
 
 export default {
   name: 'Home',
   components: {
     RedirectButton,
     Specials,
-    Reviews
+    Reviews,
+    Footer
   }
 }
 </script>

@@ -1,5 +1,6 @@
 <template>
-  <div class="w-2/5 shadow-2xl p-4">
+  <div class="w-2/5 shadow-2xl p-4 border">
+    <p class="italic text-sm my-4">Served all day!</p>
     <ul>
       <li     
       v-for="item in items" 

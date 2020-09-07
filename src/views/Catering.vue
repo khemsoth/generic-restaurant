@@ -17,13 +17,18 @@
         <div>{{ option.desc }}</div>
       </li>
     </ul>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer'
 
 export default {
   name: 'Catering',
+  components: {
+    Footer
+  },
   data() {
     return {
       options: [

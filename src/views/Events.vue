@@ -16,12 +16,18 @@
         <div>{{ event.desc }}</div>
       </li>
     </ul>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from '../components/Footer'
+
 export default {
   name: 'Events',
+  components: {
+    Footer,
+  },
   data() {
     return {
       events: [

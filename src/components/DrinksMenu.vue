@@ -1,5 +1,6 @@
 <template>
   <div class="w-2/5 shadow-2xl p-4">
+    <p class="italic text-sm my-4">Served all day!</p>
     <ul>
       <li     
       v-for="drink in drinks" 
