@@ -27,29 +27,29 @@ export default {
     return {
       items: [
         {
-          title: 'Lunch 1',
-          desc: 'Deserunt ea ex non sunt esse et velit quis.',
-          price: 13.99
-        },
-                {
-          title: 'Lunch 2',
-          desc: 'Consequat veniam do consectetur pariatur adipisicing.',
-          price: 5.99
-        },
-                {
-          title: 'Lunch 3',
-          desc: 'Aliqua sit irure ipsum cupidatat laborum ex sint quis dolore commodo esse in.',
-          price: 12.95
-        },
-                {
-          title: 'Lunch 4',
-          desc: 'Nostrud aliqua proident minim sunt irure amet aliqua incididunt reprehenderit.',
-          price: 10.99
-        },
-                {
-          title: 'Lunch 5',
-          desc: 'Minim exercitation pariatur veniam in est duis.',
+          title: 'Dessert 1',
+          desc: 'Sint ad cupidatat consectetur eu duis sit cillum in pariatur.',
           price: 8.99
+        },
+                {
+          title: 'Dessert 2',
+          desc: 'Eu consectetur deserunt labore magna aliquip incididunt pariatur quis ut ipsum deserunt nisi ullamco.',
+          price: 7.99
+        },
+                {
+          title: 'Dessert 3',
+          desc: 'Dolor cillum anim magna non sunt Lorem eu non exercitation pariatur enim dolore.',
+          price: 5.95
+        },
+                {
+          title: 'Dessert 4',
+          desc: 'In ipsum adipisicing dolore nulla sint proident aliquip ullamco dolore pariatur mollit.',
+          price: 9.99
+        },
+                {
+          title: 'Dessert 5',
+          desc: 'Eiusmod nostrud dolore aliqua sint sunt laborum.',
+          price: 6.99
         },
       ],
     }

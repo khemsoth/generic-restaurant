@@ -27,28 +27,28 @@ export default {
     return {
       drinks: [
         {
-          title: 'Beer 1',
-          desc: 'Random beer description',
+          title: 'Drink 1',
+          desc: 'Fugiat pariatur ad occaecat incididunt enim eu veniam dolor.',
           price: 8.99
         },
-                {
-          title: 'Beer 2',
-          desc: 'Random beer description',
+        {
+          title: 'Drink 2',
+          desc: 'Amet consequat ut aliqua laborum fugiat officia.',
           price: 5.99
         },
                 {
-          title: 'Beer 3',
-          desc: 'Random beer description',
+          title: 'Drink 3',
+          desc: 'Mollit non elit anim aliqua nostrud reprehenderit ex consequat eu nisi exercitation amet.',
           price: 7.99
         },
                 {
-          title: 'Beer 4',
-          desc: 'Random beer description',
+          title: 'Drink 4',
+          desc: 'Mollit dolor aute sint sint est quis ullamco et laboris qui ullamco.',
           price: 10.99
         },
                 {
-          title: 'Beer 5',
-          desc: 'Random beer description',
+          title: 'Drink 5',
+          desc: 'Consequat exercitation cupidatat culpa et enim reprehenderit.',
           price: 8.99
         },
       ]

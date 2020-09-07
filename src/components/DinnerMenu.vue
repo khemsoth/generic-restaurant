@@ -22,34 +22,34 @@
 
 <script>
 export default {
-  name: 'LunchMenu',
+  name: 'DinnerMenu',
   data() {
     return {
       items: [
         {
-          title: 'Lunch 1',
-          desc: 'Deserunt ea ex non sunt esse et velit quis.',
-          price: 13.99
+          title: 'Dinner 1',
+          desc: 'Voluptate ipsum amet velit tempor ipsum.',
+          price: 17.99
         },
                 {
-          title: 'Lunch 2',
-          desc: 'Consequat veniam do consectetur pariatur adipisicing.',
-          price: 5.99
+          title: 'Dinner 2',
+          desc: 'Voluptate eu in voluptate duis amet do occaecat occaecat culpa tempor est.',
+          price: 20.99
         },
                 {
-          title: 'Lunch 3',
-          desc: 'Aliqua sit irure ipsum cupidatat laborum ex sint quis dolore commodo esse in.',
-          price: 12.95
+          title: 'Dinner 3',
+          desc: 'Enim ut esse adipisicing non do est.',
+          price: 15.95
         },
                 {
-          title: 'Lunch 4',
-          desc: 'Nostrud aliqua proident minim sunt irure amet aliqua incididunt reprehenderit.',
-          price: 10.99
+          title: 'Dinner 4',
+          desc: 'Proident esse minim commodo cillum exercitation do aliqua est nisi.',
+          price: 12.99
         },
                 {
-          title: 'Lunch 5',
-          desc: 'Minim exercitation pariatur veniam in est duis.',
-          price: 8.99
+          title: 'Dinner 5',
+          desc: 'Anim ad mollit Lorem adipisicing est non nostrud laborum exercitation anim duis.',
+          price: 22.99
         },
       ],
     }
