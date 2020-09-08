@@ -1,5 +1,6 @@
 <template>
   <div class="w-2/5 shadow-2xl p-4">
+    <h2 class="text-bold text-3xl">Drinks</h2>
     <p class="italic text-sm my-4">Served all day!</p>
     <ul>
       <li     

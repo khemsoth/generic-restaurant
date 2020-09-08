@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="">
     <ul class="flex flex-row">
       <li 
       v-for="course in courses" 
-      @click="$emit('toggle-menu', )"
+      @click="$emit('toggle-menu')"
       v-bind:key="course.id"
       class="m-4"
       >
