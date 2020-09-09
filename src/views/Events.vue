@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="banner mx-auto bg-contain bg-no-repeat w-full h-screen flex flex-col justify-center"></div>
+    <img src="../assets/josh-ludahl-yEjvH6EFVJg-unsplash.jpg" alt="Male singer playing acoustic guitar" class="h-80 w-screen mx-auto">
+    <div class="banner mx-auto flex flex-col justify-center"></div>
     <h2
     class="text-3xl m-5 text-left font-bold"
     >
