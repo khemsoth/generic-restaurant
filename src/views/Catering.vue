@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="../assets/neonbrand-kbcqR60zWeo-unsplash.jpg" alt="" class="h-80 w-screen" >
+    <img src="../assets/neonbrand-kbcqR60zWeo-unsplash.jpg" alt="" class="h-screen w-screen" >
     <h2
     class="text-3xl m-5 text-left font-bold"
     >

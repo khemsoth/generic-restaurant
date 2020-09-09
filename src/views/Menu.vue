@@ -1,6 +1,6 @@
 <template>
 <div>
-  <img src="../assets/suad-kamardeen-CzPnO-3707k-unsplash.jpg" alt="Woman looking at menu" class="h-80 w-screen">
+  <img src="../assets/suad-kamardeen-CzPnO-3707k-unsplash.jpg" alt="Woman looking at menu" class="h-screen w-screen">
   <div class="menu flex flex-col items-center">
     <ul class="flex flex-row my-10">
       <li 
