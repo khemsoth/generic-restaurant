@@ -1,7 +1,7 @@
 <template>
   <div class="pb-20 bg-white">
     <div class="grid grid-cols-2 grid-rows-2 mx-auto">
-      <div class="w-4/5 mt-20 mb-20 p-16 bg-tertiary shadow-inner"
+      <div class="w-4/5 mx-auto mt-20 mb-20 p-16 bg-tertiary shadow-inner"
         v-for="review in reviews" :key="review.id"
         >
         <div class="flex flex-col justify-center">
