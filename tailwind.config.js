@@ -217,7 +217,9 @@ module.exports = {
       move: 'move',
       'not-allowed': 'not-allowed',
     },
-    divideColor: theme => theme('borderColor'),
+    divideColor: theme =>({
+      ...theme('borderColors')
+    }),
     divideOpacity: theme => theme('borderOpacity'),
     divideWidth: theme => theme('borderWidth'),
     fill: {

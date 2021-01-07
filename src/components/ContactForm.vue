@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row justify-evenly mt-10">
+  <div class="flex flex-row justify-evenly mt-10 divide-x-2">
     <div class="w-1/2">
       <div class="my-12">
         <h3 class="text-2xl font-bold">Address:</h3>

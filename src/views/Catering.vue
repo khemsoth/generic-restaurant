@@ -2,7 +2,7 @@
   <div>
     <img src="../assets/neonbrand-kbcqR60zWeo-unsplash.jpg" alt="" class="h-screen w-screen" >
     <h2
-    class="text-3xl m-5 text-left font-bold"
+    class="text-3xl m-5 text-left text-primary font-bold"
     >
     Choose from one of our options!
     </h2>
@@ -10,11 +10,10 @@
       <li 
       v-for="option in options" 
       :key="option.id"
-      :style="{ backgroundImage: option.image }"
-      class="mx-auto my-4 p-6 border-2 w-3/4 h-56 bg-cover bg-no-repeat"
+      class="mx-auto my-4 p-6 border-2 border-primary w-3/4 h-56 text-primary"
       >
-        <div>{{ option.name }}</div>
-        <div>{{ option.desc }}</div>
+        <p class="text-xl italic">{{ option.name }}</p>
+        <p class="mt-6">{{ option.desc }}</p>
       </li>
     </ul>
     <Footer />
@@ -35,7 +34,6 @@ export default {
         {
           name: 'Package 1',
           desc: 'Adipisicing consectetur ad proident aliquip irure esse duis magna.',
-          image: `url(${require('../assets/alexander-kovacs-uo9TCt61o30-unsplash.jpg')})`
         },
         {
           name: 'Package 2',
