@@ -24,19 +24,19 @@
       <form class="flex flex-col mx-auto">
         <div class="my-4 w-4/5 mx-auto">
           <label for="name" class="text-xl">Name</label><br>
-          <input class="border border-opacity-75 w-4/5" type="text" for="name" placeholder="John Smith">
+          <input class="border border-opacity-75 w-4/5" v-model="name" type="text" for="name" placeholder="John Smith">
         </div>
         <div class="my-4 mx-auto w-4/5">
           <label for="email" class="text-xl">Email</label><br>
-          <input class="border border-opacity-75  w-4/5" type="email" for="email" placeholder="jsmith@gmail.com">
+          <input class="border border-opacity-75 w-4/5" v-model="email" type="email" for="email" placeholder="jsmith@gmail.com">
         </div>
         <div class="my-4 w-4/5 mx-auto">
           <label for="phone" class="text-xl">Phone</label><br>
-          <input class="border border-opacity-75 w-4/5" type="tele" pattern="[0-9]{3}-[0-9](3}-[0-9]{4}" for="phone" placeholder="123-456-7890">
+          <input class="border border-opacity-75 w-4/5" v-model="phone" type="tele" for="phone" placeholder="123-456-7890">
         </div>
         <div class="my-4 w-4/5 mx-auto">
           <label class="text-xl" for="name">Message</label><br>
-          <textarea class="border w-4/5" for="message" rows="5" placeholder="Enter message here"></textarea>
+          <textarea class="border w-4/5" for="message" v-model="message" rows="5" placeholder="Enter message here"></textarea>
         </div>
         <input type="button"
           value="Send Message"
@@ -49,17 +49,37 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'ContactForm',
   data() {
     return {
-
+      name: '',
+      email: '',
+      phone: null,
+      message: ''
     }
   },
   methods: {
     submitContactForm(e) {
       e.preventDefault
-      console.log('submitted contact form')
+      let formInfo = {
+        name: this.name,
+        email: this.email,
+        phone: this.phone,
+        message: this.message
+      }
+      axios.post('/api/contact', {
+        name: this.name,
+        email: this.email,
+        phone: this.phone,
+        message: this.message
+      })
+      this.name = '',
+      this.email = '',
+      this.phone = null,
+      this.message = ''
     }
   }
 }

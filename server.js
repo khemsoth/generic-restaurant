@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 3000
 
 require('dotenv').config()
 
+app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.json())
 
@@ -24,7 +25,7 @@ app.post('/api/contact', function(req, res) {
   const mailOpts = {
       to: process.env.EMAIL_USER,
       from: process.env.EMAIL_USER,
-      subject: `${req.body.subject}`,
+      subject: `Message from Generic Restaruant`,
       text: `
         Name: ${req.body.name}
         Email: ${req.body.email}
