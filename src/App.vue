@@ -6,7 +6,8 @@
         Generic Brewhouse
       </h2>
       </div>
-      <div class="mr-6 flex items-end">
+      <input type="button" class="nav-link-button" value="+">
+      <div class="nav-links mr-6 lg:flex lg:items-end">
         <router-link to="/" class="mr-6 p-2 text-xl">Home</router-link>
         <router-link to="/menu" class="mr-6 p-2 text-xl">Menu</router-link>
         <router-link to="/events" class="mr-6 p-2 text-xl">Events</router-link>
@@ -54,4 +55,32 @@ export default {
   font-style: italic;
   color: #ecf0f1;
 }
+
+@media only screen and (max-width: 640px) {
+
+  .nav-bar {
+    height: 20vh;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-link-button {
+    width: 30%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav-link-button {
+    display: none;
+  }
+}
+
 </style>
