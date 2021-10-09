@@ -15,7 +15,6 @@
     <div>
       <img class="w-3/5 mx-auto my-10" src="../assets/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg" alt="">
     </div>
-    <Footer />
   </div>
 </template>
 

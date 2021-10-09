@@ -18,7 +18,6 @@
         <p class="mt-6">{{ event.desc }}</p>
       </li>
     </ul>
-    <Footer />
   </div>
 </template>
 

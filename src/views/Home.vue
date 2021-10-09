@@ -17,7 +17,6 @@
   <Specials />
   <Reviews />
 </div>
-  <Footer />
 </div>
 </template>
 

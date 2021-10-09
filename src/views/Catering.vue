@@ -16,7 +16,6 @@
         <p class="mt-6">{{ option.desc }}</p>
       </li>
     </ul>
-    <Footer />
   </div>
 </template>
 

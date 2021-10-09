@@ -20,7 +20,6 @@
       <component :is='currentMenuComponent' />
     </keep-alive>
   </div>
-      <Footer />
   </div>
 </template>
 
