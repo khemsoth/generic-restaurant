@@ -30,17 +30,17 @@ export default {
     return {
       specials: [
         {
-          name: 'Special1',
+          name: 'Special 1',
           desc: 'Cillum Lorem et Lorem proident. Esse enim esse excepteur veniam veniam ut duis deserunt consequat sit consequat incididunt excepteur qui.',
           img: special1
         },
         {
-          name: 'Special2',
+          name: 'Special 2',
           desc: 'Officia proident mollit nisi ut commodo. Ex ad non deserunt dolore voluptate aliqua mollit ullamco duis magna.',
           img: special2
         },
         {
-          name: 'Special3',
+          name: 'Special 3',
           desc: 'Irure do fugiat excepteur velit id duis non fugiat sint quis sit excepteur. Id eiusmod qui aliqua elit incididunt aliqua et excepteur est deserunt ea in mollit.',
           img: special3
         }
