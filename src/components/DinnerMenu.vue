@@ -1,5 +1,5 @@
 <template>
-  <div class="w-2/5 shadow-2xl p-4">
+  <div class="w-11/12 shadow-2xl p-4">
     <h2 class="text-bold text-3xl">Dinner</h2>
     <p class="italic text-sm my-4">Served from 4 PM til close.</p>
     <ul>

@@ -1,6 +1,6 @@
 <template>
 <div>
-  <img src="../assets/suad-kamardeen-CzPnO-3707k-unsplash.jpg" alt="Woman looking at menu" class="h-screen w-screen">
+  <img src="../assets/suad-kamardeen-CzPnO-3707k-unsplash.jpg" alt="Woman looking at menu" class="banner w-screen">
   <div class="menu flex flex-col items-center">
     <ul class="flex flex-row my-10">
       <li 
@@ -12,7 +12,7 @@
       >
         <input type="button" 
         v-bind:value="course.name"
-        class="cursor-pointer hover:bg-tertiary text-primary font-semibold py-2 px-4 border border-primary hover:border-transparent rounded"
+        class="cursor-pointer hover:bg-primary hover:text-tertiary bg-white text-primary font-semibold py-2 px-4 border border-primary hover:border-transparent rounded"
         >
       </li>
     </ul> 
@@ -74,3 +74,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+  .banner {
+    height: 70vh;
+  }
+
+</style>
