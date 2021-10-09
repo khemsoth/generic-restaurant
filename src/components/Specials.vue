@@ -1,18 +1,19 @@
 <template>
-  <div class="m-16 h-auto pb-20">
-    <div class="flex flex-row justify-between m-20 p-20 w-5/6 h-40 bg-white shadow-xl"
+  <div class="">
+    <div :style="{backgroundImage: 'url(' + special.img + ')'}" class="card flex flex-col m-20 w-5/6 h-40 shadow-xl"
       v-for="special in specials" :key="special.id"
       >
-      <div class="flex flex-col w-5/6">
-        <h3 class="text-3xl text-semi mb-12">
-          {{ special.name }}
-        </h3>
-        <p class="text-xl text-justify w-5/6">
-          {{ special.desc }}
-        </p>
-      </div>
-      <div class="w-1/6">
-        <img class="w-64 h-full" :src=special.img alt="">
+      <div class="card-content flex flex-col justify-center items-center w-full h-full">
+        <div class="flex flex-row">
+          <h3 class="text-3xl text-semi mb-12">
+            {{ special.name }}
+          </h3>
+        </div>
+        <div class="">
+          <p class="text-xl text-center mx-auto w-5/6">
+            {{ special.desc }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -50,5 +51,14 @@ export default {
 </script>
 
 <style>
+
+  .card {
+    background-size: cover;
+  }
+
+  .card-content {
+    background-color: rgba(255, 255, 255, .5);
+    width: inherit;
+  }
 
 </style>
