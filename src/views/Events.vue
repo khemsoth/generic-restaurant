@@ -1,13 +1,12 @@
 <template>
   <div>
-    <img src="../assets/josh-ludahl-yEjvH6EFVJg-unsplash.jpg" alt="Male singer playing acoustic guitar" class="h-screen w-screen mx-auto">
-    <div class="banner mx-auto flex flex-col justify-center"></div>
+    <img src="../assets/josh-ludahl-yEjvH6EFVJg-unsplash.jpg" alt="Male singer playing acoustic guitar" class="banner">
     <h2
-    class="text-3xl m-5 text-left text-primary font-bold"
+    class="text-3xl m-5 text-center text-primary font-bold"
     >
     Join us for the special events listed below!
     </h2>
-    <ul class="grid grid-cols-2 gap-1">
+    <ul class="flex flex-col lg:grid lg:grid-lg:cols-2 lg:gap-1">
       <li 
       v-for="event in events" 
       :key="event.id"
@@ -64,9 +63,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .banner {
-    background-image: url('../assets/josh-ludahl-yEjvH6EFVJg-unsplash.jpg');
+    height: 70vh;
   }
 
 </style>
