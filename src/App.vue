@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between" id="app">
+  <div class="flex flex-col justify-between min-h-screen" id="app">
     <header class="nav-bar flex flex-col" id="nav">
       <div class="flex flex-row justify-between my-10">
         <div class="logo flex items-center">
@@ -7,7 +7,7 @@
           Generic Brewhouse
         </h2>
         </div>
-        <input type="button" class="nav-link-button w-auto h-auto self-center text-4xl bg-transparent text-white mr-10" value="+" v-on:click="toggleNav">
+        <input type="button" class="nav-link-button w-auto h-auto self-center text-4xl bg-transparent text-white mr-10 cursor-pointer" value="+" v-on:click="toggleNav">
       </div>
     <nav :class="{ 'menu-open': menuOpen, 'menu-closed': menuClosed }" 
       class="nav-links">
@@ -64,10 +64,6 @@ export default {
 </script>
 
 <style>
-
-input:hover {
-  cursor: pointer;
-}
 
 .logo {
   color: #bdc3c7;

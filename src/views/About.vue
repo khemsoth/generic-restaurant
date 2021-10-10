@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-10">
     <h2 class="text-6xl">Who are we?</h2>
     <div class="text-justify w-4/5 mx-auto">
       <div class="my-5">

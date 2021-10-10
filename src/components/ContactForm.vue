@@ -1,6 +1,6 @@
 <template>
   <div class="lg:flex lg:flex-row lg:justify-evenly lg:mt-10 lg:divide-x-2">
-    <div class="lg:w-1/2">
+    <div class="hidden lg:w-1/2">
       <div class="lg:my-12">
         <h3 class="lg:text-2xl lg:font-bold">Address:</h3>
         <p class="lg:text-l">18415 Some Rd,<br> Avon Lake, OH, 44012  </p>
@@ -20,19 +20,19 @@
       </div>
     </div>
 
-    <div class="lg:w-1/2">
-      <form class="lg:flex lg:flex-col lg:mx-auto">
-        <div class="lg:my-4 lg:w-4/5 lg:mx-auto">
-          <label for="name" class="lg:text-xl">Name</label><br>
-          <input class="lg:border lg:border-opacity-75 lg:w-4/5" v-model="name" type="text" for="name" placeholder="John Smith">
+    <div class="mt-10 lg:w-1/2">
+      <form class="flex flex-col mx-auto">
+        <div class="my-4 w-4/5 mx-auto">
+          <label for="name" class="text-xl">Name</label><br>
+          <input class="border border-opacity-75 w-4/5 cursor-text" v-model="name" type="text" for="name" placeholder="John Smith">
         </div>
         <div class="my-4 mx-auto w-4/5">
           <label for="email" class="text-xl">Email</label><br>
-          <input class="border border-opacity-75 w-4/5" v-model="email" type="email" for="email" placeholder="jsmith@gmail.com">
+          <input class="border border-opacity-75 w-4/5 cursor-text" v-model="email" type="email" for="email" placeholder="jsmith@gmail.com">
         </div>
         <div class="my-4 w-4/5 mx-auto">
           <label for="phone" class="text-xl">Phone</label><br>
-          <input class="border border-opacity-75 w-4/5" v-model="phone" type="tele" for="phone" placeholder="123-456-7890">
+          <input class="border border-opacity-75 w-4/5 cursor-text" v-model="phone" type="tele" for="phone" placeholder="123-456-7890">
         </div>
         <div class="my-4 w-4/5 mx-auto">
           <label class="text-xl" for="name">Message</label><br>
@@ -40,7 +40,7 @@
         </div>
         <input type="button"
           value="Send Message"
-          class="cursor-pointer hover:bg-tertiary text-primary font-semibold py-2 px-4 border border-primary hover:border-transparent rounded w-1/4 self-end mr-10"
+          class="self-center mt-10 hover:text-tertiary hover:bg-primary text-primary bg-transparent font-semibold py-2 px-4 border border-primary hover:border-transparent rounded w-1/4"
           v-on:click="submitContactForm"
         >
       </form>
@@ -63,7 +63,7 @@ export default {
   },
   methods: {
     submitContactForm(e) {
-      e.preventDefault
+      e.preventDefault()
       let formInfo = {
         name: this.name,
         email: this.email,

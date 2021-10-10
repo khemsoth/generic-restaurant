@@ -1,12 +1,12 @@
 <template>
   <div>
-    <img src="../assets/neonbrand-kbcqR60zWeo-unsplash.jpg" alt="" class="h-screen w-screen" >
+    <img src="../assets/neonbrand-kbcqR60zWeo-unsplash.jpg" alt="" class="banner" >
     <h2
-    class="text-3xl m-5 text-left text-primary font-bold"
+    class="text-3xl m-5 text-center text-primary font-bold"
     >
     Choose from one of our options!
     </h2>
-    <ul class="grid grid-cols-2 gap-1">
+    <ul class="flex flex-col lg:grid lg:grid-lg:cols-2 lg:gap-1">
       <li 
       v-for="option in options" 
       :key="option.id"
@@ -54,8 +54,8 @@ export default {
 
 <style>
 
-  .option {
-
+  .banner {
+    height: 70vh;
   }
 
 </style>
